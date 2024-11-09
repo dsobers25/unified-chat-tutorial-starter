@@ -15,6 +15,7 @@ import com.vaadin.flow.router.Route;
 
 import jakarta.annotation.security.PermitAll;
 
+// new commit test
 // @Route(value = "") 
 @Route(value = "nonono", layout = MainLayout.class)
 @PageTitle("Test BItch")
