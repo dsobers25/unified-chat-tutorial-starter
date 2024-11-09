@@ -1,0 +1,27 @@
+@import "./channel-list.css";
+
+vaadin-message-input {
+    padding: 0; 
+    overflow: visible; 
+}
+
+.random {
+    background-color: green;
+}
+
+/* .random2 {
+    background-image: url("./images/wooden_human_1.jpg");
+    background-size: cover;
+} */
+
+.btn1 {
+    /* background-color: aqua; */
+    background-color: rgb(166, 255, 0);
+    transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s ease-in-out;
+}
+
+.btn1:hover {
+    background-color: aqua;
+    color: blueviolet;
+    border-color: yellowgreen;
+}
