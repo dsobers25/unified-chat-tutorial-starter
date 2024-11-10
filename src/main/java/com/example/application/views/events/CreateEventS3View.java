@@ -49,7 +49,7 @@ public class CreateEventS3View extends VerticalLayout {
     // List to store events (you might want to move this to a service class)
     private static List<Event> events = new ArrayList<>();
 
-    public CreateEventView(EventService eventService) {
+    public CreateEventS3View(EventService eventService) {
         initializeComponents();
     
         this.eventService = eventService;
