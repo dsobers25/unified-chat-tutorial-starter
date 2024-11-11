@@ -1,17 +1,18 @@
 package com.example.application.chat;
 
-import com.example.application.chat.spi.ChannelRepository;
-import com.example.application.chat.spi.NewChannel;
-import jakarta.annotation.PostConstruct;
 import org.assertj.core.api.Assertions;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import reactor.test.StepVerifier;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import com.example.application.chat.spi.ChannelRepository;
+import com.example.application.chat.spi.NewChannel;
+
+import jakarta.annotation.PostConstruct;
+import reactor.test.StepVerifier;
 
 @SuppressWarnings("ReactiveStreamsUnusedPublisher")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)

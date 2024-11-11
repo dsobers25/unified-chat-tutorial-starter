@@ -35,6 +35,6 @@ public class LimitedSortedAppendOnlyList<T> {
         if (items.isEmpty()) {
             return Optional.empty();
         }
-        return Optional.of(items.last());
+        return Optional.of(items.getLast());
     }
 }
